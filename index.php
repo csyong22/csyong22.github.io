@@ -2,6 +2,17 @@
 <html lang="en">
 
 <head>
+<script>
+	if ('serviceWorker' in navigator){
+    navigator.serviceWorker.register('service-worker.js')
+    .then(function(){
+        console.log('Service Worker Registered');
+
+    });
+
+}
+</script>
+	<link rel="manifest" href="manifest.json">
     <meta charset="UTF-8">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
