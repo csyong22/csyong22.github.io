@@ -22,26 +22,11 @@
 self.addEventListener('activate', function(evemt){
     console.log('service worker activated');
 });
-
-self.addEventListener('fetch', function(event){
-    event.respondWith(
-            caches.match(event.request)
-                .then(function(res){
-                    if(res){
-                        return res;
-                    }else{
-                        return fetch(event.request);
-                    }
-                })
+self.addEventListener('fetch', function(e) {
+    console.log(e.request.url);
+    e.respondWith(
+      caches.match(e.request).then(function(response) {
+        return response || fetch(e.request);
+      })
     );
-});
-
-//Add to Homescreen Prompt
-window.addEventListener('beforeinstallprompt', function(event){
-	ga('send', 'event', 'Install Prompt', 'Banner Shown', event.platforms.join(', '));
-
-	event.userChoice.then(function(result){
-		ga('send', 'event', 'Install Prompt', 'User Choice', result.outcome);
-		nv('event', 'Install Prompt ' + result.outcome);
-	});
-});
+  });
