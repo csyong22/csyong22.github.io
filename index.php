@@ -12,7 +12,7 @@
 
 }
 </script>
-	<link rel="manifest" href="manifest.json">
+	
     <meta charset="UTF-8">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,7 +24,7 @@
 
     <!-- Favicon  -->
     <link rel="icon" href="img/core-img/favicon.ico">
-
+    <link rel="manifest" href="manifest.json">
     <!-- Core Style CSS -->
     <link rel="stylesheet" href="css/core-style.css">
     <link rel="stylesheet" href="style.css">
