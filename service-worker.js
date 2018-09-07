@@ -35,3 +35,13 @@ self.addEventListener('fetch', function(event){
                 })
     );
 });
+
+//Add to Homescreen Prompt
+window.addEventListener('beforeinstallprompt', function(event){
+	ga('send', 'event', 'Install Prompt', 'Banner Shown', event.platforms.join(', '));
+
+	event.userChoice.then(function(result){
+		ga('send', 'event', 'Install Prompt', 'User Choice', result.outcome);
+		nv('event', 'Install Prompt ' + result.outcome);
+	});
+});
