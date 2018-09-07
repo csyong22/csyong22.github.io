@@ -4,9 +4,9 @@
     "display": "fullscreen",
     "icons": [
           {
-              "src": "img/logo/logo-144x144.jpg",
-              "sizes": "144x144",
-              "type": "image/png"
+              "src": "img/logo/real_logo.jpg",
+              "sizes": "192x192",
+              "type": "image/jpg"
           }
       ],
     "name": "CS Yong",
