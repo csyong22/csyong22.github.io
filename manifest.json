@@ -1,7 +1,7 @@
 {
     "name": "A Simple Testing PWA Application",
     "short_name": "Simple PWA",
-    "start_url": ".",
+    "start_url": "index.html",
     "display": "standalone",
     "background_color": "#ccc",
     "orientation": "portrait",
