@@ -1,0 +1,32 @@
+{
+    "name": "A Simple Testing PWA Application",
+    "short_name": "Simple PWA",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#ccc",
+    "orientation": "portrait",
+    "theme_color": "#5FAAF5",
+    "icons": [
+        {
+            "src": "img/logo/logo-96x96.jpg",
+            "sizes": "96x96",
+            "type": "image/jpg"
+        },
+        {
+            "src": "img/logo/logo-144x144.jpg",
+            "sizes": "144x144",
+            "type": "image/jpg"
+        },
+        {
+            "src": "img/logo/logo-256x256.jpg",
+            "sizes": "256x256",
+            "type": "image/jpg"
+        },
+        {
+            "src": "img/logo/logo-512x512.jpg",
+            "sizes": "512x512",
+            "type": "image/jpg"
+        }
+    ]
+
+}
